@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './logo.png';
 
 class Home extends Component {
   render() {
     return (
-      <div></div>
+      <div className="boxheading">
+          <img src={logo} className="App-logo" alt="logo" />
+          <header className="name">
+          <h1> Anna Ikonomova </h1>
+          <h2>Front-End Web developer</h2>
+        </header>
+        </div>
     );
   }
 }

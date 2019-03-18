@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import logo from './logo.png';
 import './App.css';
 import Home from './Home';
 import About from './About';
@@ -11,22 +10,16 @@ import Contact from './Contact';
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div className="container">
+      <div className="boxmenu">
       <section id= 'menu'>
       <Link to="/home"><button className='navigation'>Home</button></Link>
       <Link to="/about"><button className='navigation'>About</button></Link>
       <Link to="/myWork"><button className='navigation'>My work</button></Link>
       <Link to="/contact"><button className='navigation'>Contact</button></Link>
       </section>
-        <header className="home">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>
-            Anna Ikonomova
-          </h1>
-          <h2>Front-End Web developer</h2>
-        </header>
-
-
+      </div>
+      <div className="boxmain">
         <main>
         <Route exact path="/" render={() => (
         <Home/>
@@ -45,6 +38,8 @@ class App extends Component {
         <Contact />
       )} />
       </main>
+      </div>
+
     </div>
     );
   }

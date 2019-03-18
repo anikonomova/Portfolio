@@ -1,30 +1,50 @@
-.app {
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+
+
+.container {
   text-align: center;
-  background-color: black;
+  font-family: "Josefin Slab", serif;
+  background-image: url('./sand.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 /* Needed to position the navbar */
-  position: relative;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-logo {
-  animation: slidein;
-  animation-duration: 3s;
-  height: 35vmin;
+  height: 85px;
+  width: 100px;
+  float: left;
+  display: inline-block;
+  padding-top: 4vh;
+  padding-left: 60%;
 }
 
-.home {
-  float: right;
-  font-size: calc(10px + 2vmin);
+.boxheading {
+  animation: slidein;
+  animation-duration: 3s;
+  display: block;
+  font-size: calc(10px + 1vmin);
   color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
+  width: 100%;
+  max-height: 20%;
+  height: 16vh;
+  padding-top: 70vh;
+}
+
+.name {
+  display: block;
+  float: right;
+  width: 40vmin;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .navigation {
@@ -32,28 +52,87 @@
   background: none;
   border: none;
   font-size: calc(10px + 3vmin);
-  float: left;
-  text-align: center;
   font-style: italic;
+  font-weight: bolder;
   width:25%;
+  cursor: pointer;
+  padding-top: 15px;
+}
+.navigation:hover {
+    animation: nudge .4s linear;
+  }
+
+.navigation:focus {
+  outline: none;
 }
 
-#menu {
-  position: absolute;
-  margin: 20px;
+.boxmenu {
+  display: block;
   margin-left: 0px;
   width: 100%;
-  max-height: 15%;
+  max-height: 15vh;
 }
 
-.info {
-  width: 60%;
-  position: absolute;
-  left: 8px;
+.boxmain {
+  width: 100%;
+  display: block;
   top: 20%;
   color: white;
-  background-color: rgba(211, 217, 226,0.3);
-  border-radius: 0.5;
+  background-color: rgba(28,28,28,0.7);
+  font-size: calc(10px + 2vmin);
+  height: 85vh;
+  vertical-align: baseline;
+}
+
+.anna {
+  display: block;
+  margin-right: 20px;
+  float: right;
+  width: 12%;
+  height:25vh;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work {
+  width: 100%;
+  font-size: 16px;
+}
+
+.box {
+  width: 33%;
+  min-height: 150px;
+}
+
+.projects {
+  width: 250px;
+}
+
+.projectNames {
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.theRunner
+.matchingGame
+.plovdiv
+.pam
+.mockup
+.snail {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  height:30%;
 }
 
 @keyframes slidein {
@@ -65,5 +144,20 @@
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+@keyframes nudge {
+
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  33% {
+    transform: rotate(5deg);
+  }
+
+  66% {
+    transform: rotate(-5deg);
   }
 }
