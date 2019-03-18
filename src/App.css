@@ -17,15 +17,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.App-logo {
-  height: 85px;
-  width: 100px;
-  float: left;
-  display: inline-block;
-  padding-top: 4vh;
-  padding-left: 60%;
-}
+/*-------The logo and title position--------*/
 
 .boxheading {
   animation: slidein;
@@ -36,7 +28,16 @@
   width: 100%;
   max-height: 20%;
   height: 16vh;
-  padding-top: 70vh;
+  padding-top: 15vh;
+}
+
+.App-logo {
+  height: 85px;
+  width: 100px;
+  float: left;
+  display: inline-block;
+  padding-top: 4vh;
+  padding-left: 60%;
 }
 
 .name {
@@ -46,6 +47,13 @@
   text-align: right;
   padding-right: 15px;
 }
+
+.hello {
+  font-size: calc(12px + 8vmin);
+  padding-bottom: 25vh;
+}
+/*-------The Navigation design--------*/
+
 
 .navigation {
   color: white;
@@ -73,6 +81,7 @@
   max-height: 15vh;
 }
 
+/*-------handle the main box----*/
 .boxmain {
   width: 100%;
   display: block;
@@ -84,6 +93,8 @@
   vertical-align: baseline;
 }
 
+/*----------------About component-------------*/
+
 .anna {
   display: block;
   margin-right: 20px;
@@ -91,6 +102,10 @@
   width: 12%;
   height:25vh;
 }
+
+
+/*------------My work component-------------*/
+
 .container2 {
   width: 100%;
   display: flex;
@@ -134,6 +149,9 @@ a {
   cursor: pointer;
   height:30%;
 }
+
+
+/*--------------Animations---------*/
 
 @keyframes slidein {
   from {

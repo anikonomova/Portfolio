@@ -7,11 +7,11 @@ class About extends Component {
     return (
       <div className="info">
       <img className='anna' src={anIko} alt='Anna Ikonomova'></img>
-      <p>My Name is Anna Ikonomova - a Front-end Developer.<br></br>
+      <p className='aboutMe'>My Name is Anna Ikonomova - a Front-end Developer.<br></br>
       I love to create, to experiment and I'm a lifelong learner.<br></br>
       There is nothing impossible!<br></br>
-  The first line of code, that I wrote, was when the Google Udacity Scolarship challenge course began.
-  Now I'm still learning and definately willing to become a real professional.
+  The first line of code, that I wrote, was when the Google Udacity Scolarship challenge <br></br>
+  course began. Now I'm still learning and definately willing to become a real professional.
       </p>
     </div>
 
