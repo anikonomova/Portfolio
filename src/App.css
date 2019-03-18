@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Luckiest+Guy');
 
 
 .container {
   text-align: center;
-  font-family: "Josefin Slab", serif;
+  font-family: 'Indie Flower', cursive;
   background-image: url('./sand.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -20,15 +21,12 @@
 /*-------The logo and title position--------*/
 
 .boxheading {
-  animation: slidein;
-  animation-duration: 3s;
   display: block;
-  font-size: calc(10px + 1vmin);
   color: white;
   width: 100%;
   max-height: 20%;
   height: 16vh;
-  padding-top: 15vh;
+  padding-top: 12vh;
 }
 
 .App-logo {
@@ -36,19 +34,25 @@
   width: 100px;
   float: left;
   display: inline-block;
-  padding-top: 4vh;
   padding-left: 60%;
+  padding-top: 4vh;
 }
 
 .name {
   display: block;
   float: right;
   width: 40vmin;
+  font-size: calc(12px + 1vmin);
   text-align: right;
   padding-right: 15px;
+  line-height: 1;
+
 }
 
 .hello {
+  animation: slidein;
+  animation-duration: 4s;
+  font-family: 'Indie Flower', cursive;
   font-size: calc(12px + 8vmin);
   padding-bottom: 25vh;
 }
@@ -60,11 +64,11 @@
   background: none;
   border: none;
   font-size: calc(10px + 3vmin);
-  font-style: italic;
   font-weight: bolder;
   width:25%;
   cursor: pointer;
   padding-top: 15px;
+  font-family: 'Indie Flower', cursive;
 }
 .navigation:hover {
     animation: nudge .4s linear;
@@ -114,7 +118,9 @@
 
 .work {
   width: 100%;
-  font-size: 16px;
+}
+.featuredWork {
+  font-size: 140%;
 }
 
 .box {
@@ -128,13 +134,17 @@
 
 .projectNames {
   color: white;
-  font-size: 150%;
+  font-size: 130%;
   text-align: center;
+}
+
+.projectNames:hover {
+  color: #a3a375;
 }
 
 a {
     text-decoration: none !important;
-}
+  }
 
 .theRunner
 .matchingGame
@@ -150,7 +160,14 @@ a {
   height:30%;
 }
 
+/*--------------Contact---------*/
 
+.contact {
+  font-size: calc(10px + 10vmin);
+}
+.social:hover {
+  animation: nudge .4s linear;
+}
 /*--------------Animations---------*/
 
 @keyframes slidein {

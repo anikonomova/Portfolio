@@ -14,7 +14,7 @@ class MyWork extends Component {
       <div className="info">
       <div className='container2'>
       <div className='work'>
-      <h1>Featured work</h1>
+      <h1 className='featuredWork'>Featured work</h1>
       </div>
       <div className='box theRunner'>
       <a href='https://github.com/anikonomova/Classic-arcade-game-clone'>
@@ -39,7 +39,7 @@ class MyWork extends Component {
       <div className='box snail'>
       <a href="https://github.com/anikonomova/animal-trading-card">
       <img className='projects' src={snail} alt='Snail card'></img>
-      <h3 class="projectNames">Animal traading card</h3></a>
+      <h3 class="projectNames">Animal trading card</h3></a>
       </div>
       <div className='box mockup'>
       <a href="https://github.com/anikonomova/Mockup-to-article">
