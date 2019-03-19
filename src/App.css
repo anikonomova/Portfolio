@@ -107,6 +107,19 @@
   height:25vh;
 }
 
+.aboutMe {
+  text-align: left;
+  padding-left: 10px;
+  font-size: calc(13px + 2vmin);
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.about {
+  font-family: "Josefin Slab", serif;
+}
+
+
 
 /*------------My work component-------------*/
 
