@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Luckiest+Guy');
 
-
 .container {
   text-align: center;
   font-family: 'Indie Flower', cursive;
-  background-image: url('./sand.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 /* Needed to position the navbar */
-  height: 100vh;
+  max-height: 100vh;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -21,18 +19,18 @@
 /*-------The logo and title position--------*/
 
 .boxhome {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   width: 100%;
   height: 100%;
 }
 
 .boxheading {
-  display: block;
-  color: white;
+  display: inline-block;
+  color: black;
   width: 100%;
-  height: 20%;
-  padding-top: 15vh;
+  height: 20vh;
+  bottom: 0px;
+  right: 0px;
 }
 
 .App-logo {
@@ -40,38 +38,44 @@
   width: 100px;
   float: left;
   display: inline-block;
-  padding-left: 60%;
-  padding-top: 4vh;
+  padding-left: calc(100% - 450px);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  max-height: 100%;
 }
 
 .name {
   display: block;
   float: right;
-  width: 40vmin;
-  font-size: calc(12px + 1vmin);
+  font-size: calc(10px + 1vmin);
   text-align: right;
-  padding-right: 15px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 10px;
   line-height: 1;
+  max-height: 100%;
 
 }
 
-.hello {
+.boxhello {
+  display: inline-block;
   font-family: 'Indie Flower', cursive;
   font-size: calc(12px + 8vmin);
-  padding-bottom: 25vh;
   width: 100%;
-  height: 80%;
+  height: 70vh;
 }
 
 .helloText {
-  animation: slidein;
-  animation-duration: 5s;
+padding-top: 5%;
+ animation: slidein;
+  animation-duration: 4s;
+  z-index: 2;
 }
 /*-------The Navigation design--------*/
 
 
 .navigation {
-  color: white;
+  color: black;
   background: none;
   border: none;
   font-size: calc(10px + 3vmin);
@@ -100,21 +104,20 @@
 .boxmain {
   width: 100%;
   display: block;
-  color: white;
-  background-color: rgba(28,28,28,0.7);
-  font-size: calc(10px + 2vmin);
+  color: black;
   height: 90%;
+  font-size: calc(12px + 2vmin);
 }
 
 /*----------------About component-------------*/
 
 .anna {
   display: block;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
   float: right;
-  width: 13%;
-  min-width: 13%;
-  height:25vh;
+  width: 240px;
+  height: 380px;
 }
 
 .aboutMe {
@@ -137,13 +140,14 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work {
   width: 100%;
 }
 .featuredWork {
-  font-size: 140%;
+  font-size: calc(12px + 3vmin);
 }
 
 .box {
@@ -156,7 +160,7 @@
 }
 
 .projectNames {
-  color: white;
+  color: black;
   font-size: 130%;
   text-align: center;
 }
@@ -173,7 +177,7 @@ a {
 .matchingGame
 .plovdiv
 .pam
-.mockup
+.myReads
 .snail {
   display: block;
   width: 30%;
@@ -217,5 +221,78 @@ a {
 
   66% {
     transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+.App-logo {
+height: 65px;
+width: 70px;
+padding-left: 5px;
+padding-bottom: 10px;
+max-height: 100%;
+}
+
+.name {
+  float: right;
+  width: 70%;
+  font-size: calc(12px + 1vmin);
+  text-align: right;
+  padding-right: 5px;
+  line-height: 0.5;
+  max-height: 100%;
+}
+
+.anna {
+  margin-right: 5px;
+  margin-top: 5px;
+  float: right;
+  width: 200px;
+  height: 297px;
+}
+.box {
+  width: 100%;
+  min-height: 150px;
+}
+.theRunner
+.matchingGame
+.plovdiv
+.pam
+.mockup
+.snail {
+  width: 100%;
+  height:30%;
+}
+
+}
+@media screen and (min-width: 501px) {
+  .box {
+    width: 50%;
+    min-height: 150px;
+  }
+  .theRunner
+  .matchingGame
+  .plovdiv
+  .pam
+  .mockup
+  .snail {
+    width: 50%;
+    height:30%;
+  }
+  }
+
+@media screen and (min-width: 800px) {
+  .box {
+    width: 30%;
+    min-height: 150px;
+  }
+  .theRunner
+  .matchingGame
+  .plovdiv
+  .pam
+  .mockup
+  .snail {
+    width: 30%;
+    height:30%;
   }
 }

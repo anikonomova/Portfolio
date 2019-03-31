@@ -17,7 +17,7 @@ class About extends Component {
       <h3>Skills</h3>
       <p className='about'> Html5, CSS3, JavaScript, React, Git, Git hub, Responsive Design and etc.</p>
       <h3>Soft skills</h3>
-      <p> className='about'Flexibility, Strong work ethic and team spirit.</p>
+      <p  className='about'>Flexibility, Strong work ethic and team spirit.</p>
     </div>
 
     );

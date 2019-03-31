@@ -10,13 +10,15 @@ import Contact from './Contact';
 class App extends Component {
   render() {
     return (
-      <div className="container">
-      <div className="boxmenu">
+      <div className='container'>
+      { (navigator.onLine) &&
+        (<div className="container">
+        <div className="boxmenu">
       <section id= 'menu'>
-      <Link to="/home"><button className='navigation'>Home</button></Link>
-      <Link to="/about"><button className='navigation'>About</button></Link>
-      <Link to="/myWork"><button className='navigation'>My work</button></Link>
-      <Link to="/contact"><button className='navigation'>Contact</button></Link>
+      <Link to="/home"><button className='navigation' tabIndex = {-1}>Home</button></Link>
+      <Link to="/about"><button className='navigation' tabIndex = {-1}>About</button></Link>
+      <Link to="/myWork"><button className='navigation' tabIndex = {-1}>My work</button></Link>
+      <Link to="/contact"><button className='navigation' tabIndex = {-1}>Contact</button></Link>
       </section>
       </div>
       <div className="boxmain">
@@ -39,6 +41,12 @@ class App extends Component {
       )} />
       </main>
       </div>
+    </div>)}
+      { (!navigator.onLine) &&
+         (<div>
+           <h2>Oops! Something went wrong! Check your internet connection!</h2>
+           </div>)
+         }
 
     </div>
     );

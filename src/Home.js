@@ -6,8 +6,8 @@ class Home extends Component {
   render() {
     return (
       <div className="boxhome">
-      <div className='hello'>
-      <p className='helloText'>Hey, I'm glad to see you here. :)</p>
+      <div className='boxhello'>
+      <p className='helloText'>Hey, I'm glad to see<br></br> you here. :)</p>
       </div>
       <div className='boxheading'>
           <img src={logo} className="App-logo" alt="logo" />
