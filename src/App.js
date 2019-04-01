@@ -11,9 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-      { (navigator.onLine) &&
-        (<div>
-          <div className="boxmenu">
+      <div className="boxmenu">
       <section id= 'menu'>
       <Link to="/home"><button className='navigation' tabIndex = {-1}>Home</button></Link>
       <Link to="/about"><button className='navigation' tabIndex = {-1}>About</button></Link>
@@ -41,15 +39,8 @@ class App extends Component {
       )} />
       </main>
     </div>
-  </div>)}
-      { (!navigator.onLine) &&
-         (<div>
-           <h2>Oops! Something went wrong! Check your internet connection!</h2>
-           </div>)
-         }
-         </div>
-
-    );
+    </div>
+  )
   }
 }
 
