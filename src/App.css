@@ -8,16 +8,33 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
   height: 100vh;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+/*--------add the two main boxes*/
+.boxmenu {
+  order:1;
+  display: block;
+  margin-left: 0px;
+  margin-top: 0;
+  width: 100%;
+  height: 10%;
+}
+
+/*-------handle the main box----*/
+.boxmain {
+  order: 2;
+  width: 100%;
+  display: block;
+  color: black;
+  height: 90%;
+  font-size: calc(12px + 2vmin);
 }
 /*-------The logo and title position--------*/
 
@@ -28,34 +45,37 @@
 }
 
 .boxheading {
-  display: inline-block;
+  display: table;
   color: black;
   width: 100%;
-  height: 20%;
+  height: 25%;
   bottom: 0px;
   right: 0px;
-  background-color: rgb(255, 255, 255,0.2);
+  background-color: rgb(255, 255, 255,0.6);
 }
 
 .App-logo {
   height: 85px;
   width: 100px;
   float: left;
-  display: inline-block;
   padding-left: calc(100% - 450px);
-  padding-top: 30px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  vertical-align: bottom;
+  display: table-cell;
+/*  padding-top: 30px;
+  padding-bottom: 5px;*/
   max-height: 100%;
 }
 
 .name {
-  display: block;
+  display: table-cell;
+  vertical-align: bottom;
   float: right;
   font-size: calc(10px + 1vmin);
   text-align: right;
   padding-right: 5px;
-  padding-bottom: 5px;
-  padding-top: 10px;
+/*  padding-bottom: 5px;
+  padding-top: 10px;*/
   line-height: 1;
   max-height: 100%;
 
@@ -98,22 +118,6 @@ padding-bottom: 4%;
   outline: none;
 }
 
-.boxmenu {
-  display: block;
-  margin-left: 0px;
-  margin-top: 0;
-  width: 100%;
-  height: 10%;
-}
-
-/*-------handle the main box----*/
-.boxmain {
-  width: 100%;
-  display: block;
-  color: black;
-  height: 90%;
-  font-size: calc(12px + 2vmin);
-}
 
 /*----------------About component-------------*/
 
@@ -131,12 +135,12 @@ padding-bottom: 4%;
   padding-left: 10px;
   font-size: calc(13px + 2vmin);
   font-family: 'Indie Flower', cursive;
+  background-color: rgb(255, 255, 255,0.6);
 
 }
 
 .about {
   font-family: "Josefin Slab", serif;
-  background-color: rgb(255, 255, 255,0.6);
 }
 
 
@@ -240,8 +244,8 @@ a {
 .App-logo {
 height: 65px;
 width: 70px;
-padding-left: 5px;
-padding-bottom: 10px;
+padding-left: 20px;
+padding-top: 10px;
 max-height: 100%;
 }
 
@@ -294,6 +298,9 @@ max-height: 100%;
   }
 
 @media screen and (min-width: 800px) {
+  .container {
+    max-height: 100vh;
+  }
   .box {
     width: 30%;
     min-height: 150px;

@@ -8,10 +8,10 @@ class About extends Component {
       <div className="aboutMe">
       <img className='anna' src={anIko} alt='Anna Ikonomova'></img>
       <h3>About me</h3>
-      <p className='about'>My Name is Anna Ikonomova - Front End Developer.<br></br>
+      <p className='about'>My Name is Anna Ikonomova - Front End Web Developer.<br></br>
       I love to create, to experiment and I love to learn.<br></br>
       There is nothing impossible!<br></br>
-      The first line of code, that I wrote, was when the Google Udacity Scolarship challenge <br></br>
+      The first line of code, that I wrote, was when the Google Udacity Scolarship challenge 
       course began at the end of 2017. Now I'm still learning and definately willing to build a career in the field.
       </p>
       <h3>Skills</h3>
